@@ -9,7 +9,6 @@ pipeline{
      stage("Maven Build"){
        steps{
             sh "/opt/maven/bin/mvn package"
-            sh "mv target/*.war target/myweb.war"
              }
             }
      stage("deploy-dev"){
